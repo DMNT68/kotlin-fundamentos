@@ -1,5 +1,5 @@
 # Kotlin Fundamentos
 
 - Tipos de datos
-- Contantenación
+- Concatenación
 - Arrays
