@@ -1,4 +1,3 @@
-
 fun main() {
     println("Piramide!!!")
     val respuesta = piramide(7)
@@ -6,7 +5,7 @@ fun main() {
 }
 
 
-fun piramide (niveles: Int = 1): String {
+fun piramide(niveles: Int = 1): String {
     var respuesta: String = ""
 
     if (niveles < 0) return "No se acepta niveles menores a 1"
@@ -17,13 +16,13 @@ fun piramide (niveles: Int = 1): String {
     var horizontal = niveles
 
     for (n in 1..niveles) {
-        for (h in 1..horizontal){
-            if(espacios < h ) respuesta += "*"
+        for (h in 1..horizontal) {
+            if (espacios < h) respuesta += "*"
             else respuesta += " "
         }
-        horizontal ++
-        espacios --
-        respuesta += "\n"
+        horizontal++
+        espacios--
+        if (n != niveles) respuesta += "\n"
     }
 
     return respuesta
