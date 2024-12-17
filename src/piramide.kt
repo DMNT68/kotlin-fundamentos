@@ -1,21 +1,10 @@
-/**
- * You can edit, run, and share this code.
- * play.kotlinlang.org
- */
+
 fun main() {
     println("Piramide!!!")
     val respuesta = piramide(7)
     print(respuesta)
 }
 
-/**
-niveles = 2
-horizontal = 2
-espacios = 1
-_
-
-
- **/
 
 fun piramide (niveles: Int = 1): String {
     var respuesta: String = ""
